@@ -3,7 +3,3 @@ size = 14.0
 
 [font.normal]
 family = "JetbrainsMono Nerd Font"
-
-[window.padding]
-x = 10
-y = 4
