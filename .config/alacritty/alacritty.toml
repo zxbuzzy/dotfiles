@@ -1,5 +1,8 @@
 [font]
-size = 14.0
+size = 12.0
 
 [font.normal]
 family = "JetbrainsMono Nerd Font"
+
+[window]
+opacity = 0.75
