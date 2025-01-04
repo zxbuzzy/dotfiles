@@ -9,26 +9,17 @@
     "modules-left": [
         "hyprland/workspaces",
     ],
-    "modules-center": [
-        "hyprland/window"
-    ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
         "pulseaudio",
         "network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
         "backlight",
         "keyboard-state",
-        "sway/language",
+        "hyprland/language",
         "battery",
         "battery#bat2",
         "clock",
         "tray",
-        "custom/power"
     ],
     // Modules configuration
      "hyprland/workspaces": {
