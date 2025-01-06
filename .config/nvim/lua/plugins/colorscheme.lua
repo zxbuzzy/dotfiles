@@ -1,8 +1,7 @@
 return {
 	{
-  "folke/tokyonight.nvim",
-  lazy = false,
+  "catppuccin/nvim",
   priority = 1000,
-  opts = {},
+	name = "catppuccin"
 	}
 }
