@@ -16,6 +16,7 @@
     "clock",
     "clock#simpleclock",
     "tray",
+		"hyprland/language",
     "custom/notification",
     "custom/power",
   ],
@@ -112,4 +113,7 @@
     "return-type": "json",
     "tooltip": false,
   },
+	"hyprland/language": {
+		"format": "{short}",
+	}
 }

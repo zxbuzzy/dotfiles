@@ -49,6 +49,7 @@ window#waybar {
 #tray,
 #memory,
 #window,
+#language,
 #mpris {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
@@ -108,6 +109,10 @@ window#waybar.empty #window {
 
 #custom-power {
   color: #f38ba8;
+}
+
+#language {
+  color: #cba6f7;
 }
 
 tooltip {
