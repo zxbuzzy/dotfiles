@@ -17,6 +17,8 @@
     "clock#simpleclock",
     "tray",
 		"hyprland/language",
+		"network",
+		"battery",
     "custom/notification",
     "custom/power",
   ],
@@ -115,5 +117,19 @@
   },
 	"hyprland/language": {
 		"format": "{short}",
+	},
+	"network": {
+		"format-wifi": "",
+		"format-ethernet":"",
+		"format-disconnected": "",
+		"tooltip-format-disconnected": "Error",
+	},
+	"battery": {
+    "interval": 1,
+    "states": {
+      "good": 99,
+      "warning": 30,
+      "critical": 20
+    },
 	}
 }

@@ -50,6 +50,8 @@ window#waybar {
 #memory,
 #window,
 #language,
+#network,
+#battery,
 #mpris {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
@@ -113,6 +115,14 @@ window#waybar.empty #window {
 
 #language {
   color: #cba6f7;
+}
+
+#network {
+  color: #b4befe;
+}
+
+#battery {
+  color: #89b4fa;
 }
 
 tooltip {
