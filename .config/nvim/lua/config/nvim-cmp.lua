@@ -1,0 +1,2 @@
+require("nvim-cmp").setup({
+})
