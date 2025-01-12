@@ -11,12 +11,22 @@ setopt autocd
 export TERM="xterm-256color"
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
+export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
 # Aliases
 alias nv="nvim"
 alias lsall="ls -alh"
 alias df="df -h"
 alias updzshconf="source ${HOME}/.zshrc"
+
+# Vi mode
+bindkey -v
+
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
 
 # A bit of care
 alias rm="rm -i"
@@ -31,7 +41,7 @@ _comp_options+=(globdots)
 # Git aliases
 alias addall="git add ."
 alias commit="git commit -m"
-
+alias push="git push origin"
 
 # PYENV
 export PYENV_ROOT="$HOME/.pyenv"
