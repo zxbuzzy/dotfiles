@@ -45,6 +45,7 @@ window#waybar {
 #custom-power,
 #custom-spotify,
 #custom-notification,
+#custom-linux-kernel,
 #cpu,
 #tray,
 #memory,
@@ -71,6 +72,10 @@ window#waybar {
 #custom-sep {
   padding: 0px;
   color: #585b70;
+}
+
+#custom-linux-kernel {
+	color: #8839ef;
 }
 
 window#waybar.empty #window {
