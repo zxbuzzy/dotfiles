@@ -7,7 +7,7 @@
 PS1="%n@%m %1~: "
 setopt autocd
 
-# Exports
+# Export
 export TERM="xterm-256color"
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"

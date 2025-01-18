@@ -1,0 +1,26 @@
+# Export
+set fish_greeting
+set TERM "xterm-256color"
+set EDITOR "nvim"
+set -x MANPAGER "nvim +Man!"
+set HISTORY_IGNORE "(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+
+# Functions
+function fish_user_key_bindings
+	fish_vi_key_bindings
+end
+
+# Aliases
+alias nv="nvim"
+alias lsall="ls -alh"
+alias df="df -h"
+
+# A bit of care
+alias rm="rm -i"
+
+# Git aliases
+alias addall="git add ."
+alias commit="git commit -m"
+alias push="git push origin"
+
+
