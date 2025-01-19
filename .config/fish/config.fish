@@ -14,6 +14,7 @@ end
 alias nv="nvim"
 alias lsall="ls -alh"
 alias df="df -h"
+alias sn="shutdown now"
 
 # A bit of care
 alias rm="rm -i"
