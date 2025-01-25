@@ -8,7 +8,6 @@
   "passthrough": false,
   "fixed-center": true,
 	"modules-left": ["hyprland/workspaces"],
-  "modules-center": ["mpris"],
   "modules-right": [
 		"custom/linux-kernel",
     "cpu",
@@ -23,26 +22,6 @@
     "custom/notification",
     "custom/power",
   ],
-  "custom/spotify": {
-    "format": "  {}",
-    "return-type": "json",
-    "on-click": "playerctl -p spotify play-pause",
-    "on-click-right": "spotifatius toggle-liked",
-    "on-click-middle": "playerctl -p spotify next",
-    "exec": "spotifatius monitor",
-  },
-  "mpris": {
-    "player": "spotify",
-    "dynamic-order": ["artist", "title"],
-    "format": "{player_icon} {dynamic}",
-    "format-paused": "{status_icon} <i>{dynamic}</i>",
-    "status-icons": {
-      "paused": "",
-    },
-    "player-icons": {
-      "default": "",
-    },
-  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{id}",
@@ -59,7 +38,7 @@
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": " {:%I:%M %p}",
+    "format": " {:%H:%M}",
   },
   "clock": {
     "format": " {:L%a %d %b}",
