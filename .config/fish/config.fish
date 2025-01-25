@@ -10,6 +10,9 @@ function fish_user_key_bindings
 	fish_vi_key_bindings
 end
 
+# pyenv
+pyenv init - fish | source
+
 # Aliases
 alias nv="nvim"
 alias lsall="ls -alh"
