@@ -31,6 +31,6 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 -- neotree specific
-vim.keymap.set('n', '<leader>n', ':Neotree reveal left<CR>')
+vim.keymap.set('n', '<leader>e', ':Neotree reveal left<CR>')
 
 
