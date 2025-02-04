@@ -14,7 +14,7 @@ export MANPAGER="nvim +Man!"
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
 # Aliases
-alias nv="nvim"
+alias v="nvim"
 alias lsall="ls -alh"
 alias df="df -h"
 alias updzshconf="source ${HOME}/.zshrc"

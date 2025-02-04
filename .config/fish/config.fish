@@ -14,7 +14,7 @@ end
 pyenv init - fish | source
 
 # Aliases
-alias nv="nvim"
+alias v="nvim"
 alias lsall="ls -alh"
 alias df="df -h"
 alias sn="shutdown now"

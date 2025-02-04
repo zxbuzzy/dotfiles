@@ -38,7 +38,7 @@
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": " {:%H:%M}",
+    "format": " {:%I:%M %p}",
   },
   "clock": {
     "format": " {:L%a %d %b}",
@@ -109,11 +109,12 @@
 		"tooltip-format-disconnected": "Error",
 	},
 	"battery": {
-    "interval": 1,
+    "interval": 30,
     "states": {
       "good": 99,
       "warning": 30,
       "critical": 20
     },
+		"format-charging": "{capacity}% 󰂄",
 	}
 }
