@@ -54,7 +54,7 @@ window#waybar {
 #network,
 #battery,
 #mpris {
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0.4rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   /* background-color: #181825; */

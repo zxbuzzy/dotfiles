@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 40,
+  "height": 42,
   "spacing": 2,
   "exclusive": true,
   "gtk-layer-shell": true,
@@ -15,8 +15,8 @@
     "pulseaudio",
     "clock",
     "clock#simpleclock",
-    "tray",
 		"hyprland/language",
+    "tray",
 		"network",
 		"battery",
     "custom/notification",
@@ -33,7 +33,7 @@
     "format": "{title}",
   },
   "tray": {
-    "show-passive-items": true,
+    "show-passive-items": false,
     "spacing": 10,
   },
   "clock#simpleclock": {

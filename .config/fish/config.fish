@@ -18,6 +18,7 @@ alias v="nvim"
 alias lsall="ls -alh"
 alias df="df -h"
 alias sn="shutdown now"
+alias zr="zathura"
 
 # A bit of care
 alias rm="rm -i"
