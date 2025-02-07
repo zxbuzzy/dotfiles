@@ -1,0 +1,15 @@
+auto-reload yes
+
+bind-key h quit
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key H prev-feed
+bind-key L next-feed
+bind-key g home
+bind-key G end
+bind-key SPACE macro-prefix 
+bind-key b bookmark 
+bind-key ^F pagedown 
+bind-key ^B pageup 
+bind-key ^H toggle-show-read-feeds

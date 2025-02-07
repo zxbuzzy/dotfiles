@@ -27,6 +27,12 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set softtabstop=2")
 
+-- Set for markdown files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  command = "setlocal tabstop=2 shiftwidth=2 softtabstop=2",
+})
+
 vim.wo.number = true
 vim.wo.relativenumber = true
 
