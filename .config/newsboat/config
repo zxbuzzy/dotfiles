@@ -1,4 +1,5 @@
 auto-reload yes
+max-items 25
 
 bind-key h quit
 bind-key j down
@@ -13,3 +14,7 @@ bind-key b bookmark
 bind-key ^F pagedown 
 bind-key ^B pageup 
 bind-key ^H toggle-show-read-feeds
+
+highlight all "---.*---" cyan
+
+
