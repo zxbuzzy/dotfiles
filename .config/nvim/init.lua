@@ -3,7 +3,7 @@ require("config.colorscheme")
 require("config.telescope")
 require("config.treesitter")
 require("config.lualine")
-require("config.neo-tree")
+require("plugins.neo-tree")
 require("config.mason")
 require("config.mason-lspconfig")
 require("config.nvim-lspconfig")
@@ -38,8 +38,5 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.wo.number = true
 vim.wo.relativenumber = true
-
--- neotree specific
-vim.keymap.set('n', '<leader>n', ':Neotree reveal left<CR>')
 
 
