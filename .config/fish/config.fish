@@ -4,6 +4,7 @@ set TERM "xterm-256color"
 set EDITOR "nvim"
 set -x MANPAGER "nvim +Man!"
 set HISTORY_IGNORE "(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+set BOOKS "$HOME/Documents/books"
 
 # Functions
 function fish_user_key_bindings

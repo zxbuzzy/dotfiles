@@ -52,6 +52,7 @@ window#waybar {
 #window,
 #language,
 #network,
+#backlight,
 #battery,
 #mpris {
   padding: 0.3rem 0.4rem;
@@ -128,6 +129,10 @@ window#waybar.empty #window {
 
 #battery {
   color: #89b4fa;
+}
+
+#backlight {
+	color: #ea76cb;
 }
 
 tooltip {

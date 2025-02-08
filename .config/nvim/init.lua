@@ -12,6 +12,9 @@ require("config.none-ls")
 -- change the leader key
 vim.g.mapleader = " "
 
+-- use system clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- remap vim keys
 vim.keymap.set('i', 'jj', '<ESC>')
 
@@ -37,6 +40,6 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 -- neotree specific
-vim.keymap.set('n', '<leader>e', ':Neotree reveal left<CR>')
+vim.keymap.set('n', '<leader>n', ':Neotree reveal left<CR>')
 
 

@@ -13,6 +13,7 @@
     "cpu",
     "memory",
     "pulseaudio",
+    "backlight",
     "clock",
     "clock#simpleclock",
 		"hyprland/language",
@@ -101,6 +102,10 @@
 	},
 	"hyprland/language": {
 		"format": "{short}",
+	},
+	"backlight": {
+		"format": "{percent}% {icon}",
+    "format-icons": ["", ""]
 	},
 	"network": {
 		"format-wifi": "",
