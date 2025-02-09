@@ -1,18 +1,16 @@
 * {
+  border: none;
+  border-radius: 0;
   min-height: 0;
-  min-width: 0;
-  font-family: Lexend, "JetBrainsMono NFP";
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 16px;
-  font-weight: 600;
+	font-weight: bold;
 }
 
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  /* background-color: #1e1e2e; */
-  /* background-color: #181825; */
   background-color: #11111b;
-  /* background-color: rgba(24, 24, 37, 0.6); */
 }
 
 #workspaces button {
@@ -43,8 +41,6 @@ window#waybar {
 #pulseaudio,
 #custom-logo,
 #custom-power,
-#custom-spotify,
-#custom-notification,
 #custom-linux-kernel,
 #cpu,
 #tray,
@@ -52,13 +48,11 @@ window#waybar {
 #window,
 #language,
 #network,
-#backlight,
 #battery,
-#mpris {
-  padding: 0.3rem 0.4rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
-  /* background-color: #181825; */
+#mpris { 
+	border-radius: 4px;
+  margin: 4px 3px;
+  padding: 2px 12px;
   background-color: #1e1e2e;
 }
 
@@ -125,6 +119,7 @@ window#waybar.empty #window {
 
 #network {
   color: #b4befe;
+	padding-right: 17px;
 }
 
 #battery {

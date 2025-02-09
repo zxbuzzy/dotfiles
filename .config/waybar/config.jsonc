@@ -13,14 +13,11 @@
     "cpu",
     "memory",
     "pulseaudio",
-    "backlight",
-    "clock",
     "clock#simpleclock",
 		"hyprland/language",
     "tray",
 		"network",
 		"battery",
-    "custom/notification",
     "custom/power",
   ],
   "hyprland/workspaces": {
@@ -83,19 +80,6 @@
     "on-click": "wlogout -p layer-shell &",
     "format": "⏻",
   },
-  "custom/notification": {
-    "escape": true,
-    "exec": "swaync-client -swb",
-    "exec-if": "which swaync-client",
-    "format": "{icon}",
-    "format-icons": {
-      "none": "󰅺",
-      "notification": "󰡟",
-    },
-    "on-click": "sleep 0.1 && swaync-client -t -sw",
-    "return-type": "json",
-    "tooltip": false,
-  },
 	"custom/linux-kernel": {
 		"exec": "uname -r",
 		"format": "󰣇 {}"
@@ -103,14 +87,12 @@
 	"hyprland/language": {
 		"format": "{short}",
 	},
-	"backlight": {
-		"format": "{percent}% {icon}",
-    "format-icons": ["", ""]
-	},
 	"network": {
-		"format-wifi": "",
-		"format-ethernet":"",
-		"format-disconnected": "",
+    "format-wifi" : "{icon}",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "format-ethernet": "󰀂",
+		"format-alt" : "󱛇",
+    "format-disconnected" : "󰖪",
 		"tooltip-format-disconnected": "Error",
 	},
 	"battery": {
