@@ -3,8 +3,6 @@ set fish_greeting
 set TERM "xterm-256color"
 set EDITOR "nvim"
 set HISTORY_IGNORE "(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
-set BOOKS "$HOME/Documents/books"
-set NOTES "$HOME/Documents/notes"
 
 # Functions
 function fish_user_key_bindings
@@ -22,6 +20,8 @@ alias sn="shutdown now"
 alias zr="zathura"
 alias news="newsboat"
 alias ff="fastfetch"
+alias notes="cd $HOME/Documents/notes"
+alias books="cd $HOME/Documents/books"
 
 # A bit of care
 alias rm="rm -i"

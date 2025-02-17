@@ -36,7 +36,9 @@
   },
   "clock#simpleclock": {
     "tooltip": false,
-    "format": " {:%R}",
+    "format": " {:%I:%M %p}",
+    "min-length": 8,
+    "max-length": 12
   },
   "cpu": {
     "format": " {usage}%",
