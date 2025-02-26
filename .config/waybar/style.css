@@ -38,7 +38,7 @@ window#waybar {
 }
 
 #clock,
-#pulseaudio,
+#pipewire,
 #custom-logo,
 #custom-power,
 #custom-linux-kernel,
@@ -97,7 +97,7 @@ window#waybar.empty #window {
   color: #cdd6f4;
 }
 
-#pulseaudio {
+#pipewire {
   color: #b4befe;
 }
 

@@ -12,7 +12,7 @@
 		"custom/linux-kernel",
     "cpu",
     "memory",
-    "pulseaudio",
+    "wireplumber",
     "clock#simpleclock",
 		"hyprland/language",
     "tray",

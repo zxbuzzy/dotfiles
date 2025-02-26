@@ -1,5 +1,5 @@
 [font]
-size = 15.0
+size = 13.0
 
 [font.normal]
 family = "MesloLGS Nerd Font Mono"
@@ -8,6 +8,3 @@ family = "MesloLGS Nerd Font Mono"
 opacity = 0.75
 padding.x = 5
 padding.y = 5
-
-[terminal.shell]
-program = "/usr/bin/fish"

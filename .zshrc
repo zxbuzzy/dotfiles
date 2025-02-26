@@ -7,6 +7,12 @@
 PS1="%n@%m %1~: "
 setopt autocd
 
+# Basic zsh setup
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY
+
 # Export
 export TERM="xterm-256color"
 export EDITOR="nvim"
@@ -47,8 +53,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
 
-## [Completion]
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /home/zxbuzzy/.dart-cli-completion/zsh-config.zsh ]] && . /home/zxbuzzy/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
 
