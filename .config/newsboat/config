@@ -1,5 +1,6 @@
 auto-reload yes
 max-items 25
+browser "xdg-open %u"
 
 bind-key h quit
 bind-key j down

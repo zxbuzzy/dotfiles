@@ -42,6 +42,7 @@ _comp_options+=(globdots)
 alias addall="git add ."
 alias commit="git commit -m"
 alias push="git push origin"
+alias status="git status"
 
 # PYENV
 export PYENV_ROOT="$HOME/.pyenv"
