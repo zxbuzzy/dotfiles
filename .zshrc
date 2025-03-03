@@ -7,6 +7,9 @@
 PS1="%n@%m %1~: "
 setopt autocd
 
+# PATH
+PATH="/usr/bin:$PATH"
+
 # Basic zsh setup
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -23,6 +26,7 @@ export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 alias v="nvim"
 alias lsall="ls -alh"
 alias df="df -h"
+alias sn="shutdown now"
 alias updzshconf="source ${HOME}/.zshrc"
 
 # Vi mode
