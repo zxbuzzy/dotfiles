@@ -59,3 +59,10 @@ eval "$(pyenv init - zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for CLI.
+if [ -f '/home/zxbuzzy/yandex-cloud/path.bash.inc' ]; then source '/home/zxbuzzy/yandex-cloud/path.bash.inc'; fi
+
+# The next line enables shell command completion for yc.
+if [ -f '/home/zxbuzzy/yandex-cloud/completion.zsh.inc' ]; then source '/home/zxbuzzy/yandex-cloud/completion.zsh.inc'; fi
+
