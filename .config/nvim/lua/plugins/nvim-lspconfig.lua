@@ -6,6 +6,9 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.pyright.setup({})
 			lspconfig.gopls.setup({})
+			lspconfig.yamlls.setup({
+				filetypes = { "yaml", "yml" },
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})

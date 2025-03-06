@@ -13,7 +13,7 @@ PATH="/usr/bin:$PATH"
 # Basic zsh setup
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
-SAVEHIST=1000
+SAVEHIST=10000
 setopt SHARE_HISTORY
 
 # Export
@@ -28,6 +28,7 @@ alias lsall="ls -alh"
 alias df="df -h"
 alias sn="shutdown now"
 alias updzshconf="source ${HOME}/.zshrc"
+alias k="kubectl"
 
 # Vi mode
 bindkey -v
@@ -47,6 +48,7 @@ alias addall="git add ."
 alias commit="git commit -m"
 alias push="git push origin"
 alias status="git status"
+alias pull="git pull -r"
 
 # PYENV
 export PYENV_ROOT="$HOME/.pyenv"
