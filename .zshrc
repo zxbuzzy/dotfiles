@@ -27,6 +27,7 @@ alias v="nvim"
 alias lsall="ls -alh"
 alias df="df -h"
 alias sn="shutdown now"
+alias news="newsboat"
 alias updzshconf="source ${HOME}/.zshrc"
 alias k="kubectl"
 
