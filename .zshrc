@@ -21,6 +21,7 @@ export TERM="xterm-256color"
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+export ANKI_WAYLAND=1
 
 # Aliases
 alias v="nvim"
@@ -30,6 +31,7 @@ alias sn="shutdown now"
 alias news="newsboat"
 alias updzshconf="source ${HOME}/.zshrc"
 alias k="kubectl"
+alias history="history 1"
 
 # Vi mode
 bindkey -v
@@ -67,3 +69,5 @@ if [ -f '/home/zxbuzzy/yandex-cloud/path.bash.inc' ]; then source '/home/zxbuzzy
 # The next line enables shell command completion for yc.
 if [ -f '/home/zxbuzzy/yandex-cloud/completion.zsh.inc' ]; then source '/home/zxbuzzy/yandex-cloud/completion.zsh.inc'; fi
 
+# starship support
+eval "$(starship init zsh)"
