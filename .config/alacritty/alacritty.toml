@@ -1,7 +1,7 @@
-general.import = [
-"~/dotfiles/.config/alacritty/catppuccin-latte.toml"
+[general]
+import = [
+  "~/dotfiles/.config/alacritty/tokyionight-storm.toml"
 ]
-
 [font]
 size = 13.0
 
