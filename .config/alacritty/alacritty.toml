@@ -15,3 +15,5 @@ family = "MesloLGS Nerd Font Mono"
 padding.x = 5
 padding.y = 5
 
+[terminal]
+shell.program = "/usr/bin/fish"

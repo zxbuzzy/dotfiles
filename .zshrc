@@ -8,7 +8,7 @@ PS1="%n@%m %1~: "
 setopt autocd
 
 # PATH
-PATH="/usr/bin:$PATH"
+PATH="$HOME/.local/bin/:usr/bin:$PATH"
 
 # Basic zsh setup
 HISTFILE=~/.zsh_history
@@ -19,7 +19,7 @@ setopt SHARE_HISTORY
 # Export
 export TERM="xterm-256color"
 export EDITOR="nvim"
-export MANPAGER="nvim +Man!"
+export MANPAGER="less"
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export ANKI_WAYLAND=1
 
@@ -29,12 +29,8 @@ alias lsall="ls -alh"
 alias df="df -h"
 alias sn="shutdown now"
 alias news="newsboat"
-alias updzshconf="source ${HOME}/.zshrc"
 alias k="kubectl"
-alias history="history 1"
-
-# Vi mode
-bindkey -v
+alias hst="history 1"
 
 # A bit of care
 alias rm="rm -i"
@@ -68,6 +64,3 @@ if [ -f '/home/zxbuzzy/yandex-cloud/path.bash.inc' ]; then source '/home/zxbuzzy
 
 # The next line enables shell command completion for yc.
 if [ -f '/home/zxbuzzy/yandex-cloud/completion.zsh.inc' ]; then source '/home/zxbuzzy/yandex-cloud/completion.zsh.inc'; fi
-
-# starship support
-eval "$(starship init zsh)"
