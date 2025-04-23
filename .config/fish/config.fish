@@ -30,6 +30,7 @@ alias rm="rm -i"
 alias addall="git add ."
 alias commit="git commit -m"
 alias push="git push origin"
+alias gstatus="git status"
 
 # add starhsip
 starship init fish | source
