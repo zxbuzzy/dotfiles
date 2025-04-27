@@ -3,6 +3,7 @@ set fish_greeting
 set TERM xterm-256color
 set EDITOR nvim
 set HISTORY_IGNORE "(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+set fish_cursor_insert block
 
 # Functions
 function fish_user_key_bindings

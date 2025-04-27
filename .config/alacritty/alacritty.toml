@@ -1,9 +1,9 @@
 [general]
 import = [
-  "~/dotfiles/.config/alacritty/tokyionight-storm.toml"
+  "~/dotfiles/.config/alacritty/themes/gruvbox-dark.toml"
 ]
 [font]
-size = 13.0
+size = 12.0
 
 [env]
 TERM = "xterm-256color"
@@ -17,3 +17,6 @@ padding.y = 5
 
 [terminal]
 shell.program = "/usr/bin/fish"
+
+[cursor.style]
+shape = "Block"
