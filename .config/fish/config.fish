@@ -4,6 +4,7 @@ set TERM xterm-256color
 set EDITOR nvim
 set HISTORY_IGNORE "(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 set fish_cursor_insert block
+set -Ux PYENV_ROOT $HOME/.pyenv
 
 # Functions
 function fish_user_key_bindings
@@ -11,6 +12,7 @@ function fish_user_key_bindings
 end
 
 # pyenv
+fish_add_path $PYENV_ROOT/bin
 pyenv init - fish | source
 
 # Aliases
