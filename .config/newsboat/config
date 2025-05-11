@@ -16,6 +16,4 @@ bind-key ^F pagedown
 bind-key ^B pageup 
 bind-key ^H toggle-show-read-feeds
 
-highlight all "---.*---" cyan
-
 

@@ -29,11 +29,5 @@ alias books="cd $HOME/Documents/books"
 # A bit of care
 alias rm="rm -i"
 
-# Git aliases
-alias addall="git add ."
-alias commit="git commit -m"
-alias push="git push origin"
-alias gstatus="git status"
-
 # add starhsip
 starship init fish | source

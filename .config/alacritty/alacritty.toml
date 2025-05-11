@@ -1,6 +1,6 @@
 [general]
 import = [
-  "~/dotfiles/.config/alacritty/themes/tokyonight_moon.toml"
+  "~/dotfiles/.config/alacritty/themes/gruvbox_dark.toml"
 ]
 [font]
 size = 14.0
@@ -14,6 +14,7 @@ family = "MesloLGS Nerd Font Mono"
 [window]
 padding.x = 5
 padding.y = 5
+dynamic_title = false
 
 [terminal]
 shell.program = "/usr/bin/fish"

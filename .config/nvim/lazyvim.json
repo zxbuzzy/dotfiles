@@ -1,7 +1,8 @@
 {
   "extras": [
     "lazyvim.plugins.extras.editor.neo-tree",
-    "lazyvim.plugins.extras.lang.ansible"
+    "lazyvim.plugins.extras.lang.ansible",
+    "lazyvim.plugins.extras.lang.markdown"
   ],
   "install_version": 8,
   "news": {
