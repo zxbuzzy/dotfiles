@@ -1,6 +1,6 @@
 [general]
 import = [
-  "~/dotfiles/.config/alacritty/themes/gruvbox_dark.toml"
+  "~/dotfiles/.config/alacritty/themes/tokyonight_moon.toml"
 ]
 [font]
 size = 14.0
