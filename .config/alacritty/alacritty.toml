@@ -17,7 +17,7 @@ padding.y = 5
 dynamic_title = false
 
 [terminal]
-shell.program = "/usr/bin/fish"
+shell.program = "/usr/bin/zsh"
 
 [cursor.style]
 shape = "Block"
