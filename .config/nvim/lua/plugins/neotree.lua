@@ -8,5 +8,13 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     lazy = false,
-  }
+    opts = {
+      filesystem = {
+        follow_current_file = {
+          enabled = true
+        },
+        use_libuv_file_watcher = true
+      }
+    }
+  },
 }
