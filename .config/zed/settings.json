@@ -16,14 +16,15 @@
   "ui_font_size": 15,
   "ui_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 14,
+  "buffer_font_size": 13,
+  "relative_line_numbers": true,
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Catppuccin Latte",
     "dark": "Tokyo Night"
   },
   "terminal": {
-    "font_size": 14,
+    "font_size": 12,
     "toolbar": {
       "breadcrumbs": false
     }
