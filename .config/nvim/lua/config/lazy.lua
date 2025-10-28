@@ -34,3 +34,6 @@ require("lazy").setup({
 })
 
 require("config.keymaps")
+
+-- add telescope ui-select
+pcall(require('telescope').load_extension, 'ui-select')

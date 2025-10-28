@@ -1,6 +1,9 @@
 return {
     'nvim-telescope/telescope.nvim', branch = '0.1.x',
-    dependencies = { 'nvim-lua/plenary.nvim' },
+    dependencies = { 
+      'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope-ui-select.nvim'
+    },
     opts = {
       pickers = {
         find_files = {
@@ -9,10 +12,15 @@ return {
         },
         live_grep = {
           file_ignore_patterns = { 'node_modules', '.git', '.venv' },
-          additional_args = function()
-            return { "--hidden" }
+          additional_args = function(opts)
+            return { '--hidden' }
           end
         }
       },
+      extensions = {
+        ['ui-select'] = {
+          require('telescope.themes').get_dropdown(),
+        }
+      }
     }
 }
