@@ -11,13 +11,17 @@ keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window'
 keymap.set('i', 'jk', '<ESC>', { desc = "Quit insert mode" })
 
 -- resize keymap
-keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
-keymap.set("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
-keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Width" })
-keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window Width" })
+keymap.set("n", "<C-w><up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
+keymap.set("n", "<C-w><down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
+keymap.set("n", "<C-w><left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Width" })
+keymap.set("n", "<C-w><right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window Width" })
 
 -- neotree keymap
 keymap.set("n", "<leader>e", ":Neotree reveal left<CR>", { desc = "Open Neotree" })
+
+-- split window
+keymap.set('n', 'ss', ":split<Return>", { desc = "Horizontal split window" })
+keymap.set('n', 'sv', ":vsplit<Return>", { desc = "Vertical split window" })
 
 -- telescope
 keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
