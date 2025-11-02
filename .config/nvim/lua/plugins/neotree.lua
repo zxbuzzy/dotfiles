@@ -1,5 +1,5 @@
 return {
-    {
+  {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     dependencies = {
@@ -11,10 +11,10 @@ return {
     opts = {
       filesystem = {
         follow_current_file = {
-          enabled = true
+          enabled = true,
         },
-        use_libuv_file_watcher = true
-      }
-    }
+        use_libuv_file_watcher = true,
+      },
+    },
   },
 }

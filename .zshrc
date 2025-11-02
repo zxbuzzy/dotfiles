@@ -4,11 +4,18 @@ SAVEHIST=10000
 setopt autocd
 bindkey -v
 
+# use nvim as a manpger
+export MANPAGER='nvim +Man!'
+
 # some aliases
 alias mkdir="mkdir -p"
+
+# vim alias
+alias vim="nvim"
 
 # git aliases
 alias ginit="git init"
 alias gadd="git add -A"
 alias gcm="git commit -m"
 alias gstat="git status"
+alias glog="git log --oneline --graph"

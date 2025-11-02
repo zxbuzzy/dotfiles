@@ -28,12 +28,14 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins" },
+    { import = "plugins.lsp" },
   },
   install = { colorscheme = { "tokyonight" } },
-  checker = { enabled = true },
+  checker = { enabled = true, notify = false },
 })
 
 require("config.keymaps")
+require("config.lsp")
 
 -- add telescope ui-select
-pcall(require('telescope').load_extension, 'ui-select')
+pcall(require("telescope").load_extension, "ui-select")
