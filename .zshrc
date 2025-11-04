@@ -19,3 +19,5 @@ alias gadd="git add -A"
 alias gcm="git commit -m"
 alias gstat="git status"
 alias glog="git log --oneline --graph"
+
+alias lg="lazygit"
