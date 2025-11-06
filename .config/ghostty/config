@@ -1,3 +1,4 @@
 theme = dark:TokyoNight Moon,light:Catppuccin Latte
 font-family = JetBrainsMono Nerd Font
 shell-integration-features = ssh-env
+background-opacity=0.95

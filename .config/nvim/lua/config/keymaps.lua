@@ -35,8 +35,3 @@ keymap.set("n", "gcf", function()
     lsp_format = "fallback",
   })
 end, { desc = "Code format" })
-
--- -- open diagnostics
--- vim.keymap.set("n", "gl", function()
---   vim.diagnostic.open_float()
--- end, { desc = "Open Diagnostics in Float" })

@@ -1,0 +1,11 @@
+[golang]
+format = '[ ](bold cyan)'
+
+[python]
+symbol = "🐍 "
+
+[git_branch]
+symbol = " "
+
+[kubernetes]
+symbol = '☸ '

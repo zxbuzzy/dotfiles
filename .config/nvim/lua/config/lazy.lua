@@ -34,6 +34,8 @@ require("lazy").setup({
   checker = { enabled = true, notify = false },
 })
 
+vim.cmd([[colorscheme tokyonight-moon]])
+
 require("config.keymaps")
 require("config.lsp")
 
