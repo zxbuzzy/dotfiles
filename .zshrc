@@ -13,12 +13,15 @@ alias mkdir="mkdir -p"
 # vim alias
 alias vim="nvim"
 
+# ll
+alias ll="ls -lG"
+
 # git aliases
 alias ginit="git init"
 alias gadd="git add -A"
 alias gcm="git commit -m"
 alias gstat="git status"
-alias glog="git log --oneline --graph"
+alias glog="git log --oneline --all --graph"
 alias gbr="git branch"
 
 alias lg="lazygit"
