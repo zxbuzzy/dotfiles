@@ -1,4 +1,10 @@
 theme = dark:TokyoNight Moon,light:Catppuccin Latte
 font-family = JetBrainsMono Nerd Font
 shell-integration-features = ssh-env
-background-opacity=0.95
+background-opacity = 0.95
+bell-features = no-title, no-attention
+
+keybind = ctrl+shift+arrow_left=resize_split:left,10
+keybind = ctrl+shift+arrow_right=resize_split:right,10
+keybind = ctrl+shift+arrow_down=resize_split:down,10
+keybind = ctrl+shift+arrow_up=resize_split:up,10
