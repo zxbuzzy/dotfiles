@@ -29,6 +29,9 @@ keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" 
 keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 
+-- QoL keymaps
+keymap.set("n", "<leader>nh", "<cmd>noh<cr>", { desc = "No highlight after seach" })
+
 -- conform keybinds
 keymap.set("n", "gcf", function()
   require("conform").format()({
