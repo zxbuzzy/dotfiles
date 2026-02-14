@@ -1,4 +1,5 @@
 local builtin = require("telescope.builtin")
+local conform = require("conform")
 local keymap = vim.keymap
 
 -- navigation keymaps
@@ -11,10 +12,10 @@ keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window"
 keymap.set("i", "jk", "<ESC>", { desc = "Quit insert mode" })
 
 -- resize keymap
-keymap.set("n", "<C-w><up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
-keymap.set("n", "<C-w><down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
-keymap.set("n", "<C-w><left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Width" })
-keymap.set("n", "<C-w><right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window Width" })
+keymap.set("n", "<C-w><Up>", "<cmd>resize +3<cr>", { desc = "Increase Window Height" })
+keymap.set("n", "<C-w><Down>", "<cmd>resize -3<cr>", { desc = "Decrease Window Height" })
+keymap.set("n", "<C-w><Left>", "<cmd>vertical resize -3<cr>", { desc = "Decrease Window Width" })
+keymap.set("n", "<C-w><Right>", "<cmd>vertical resize +3<cr>", { desc = "Increase Window Width" })
 
 -- neotree keymap
 keymap.set("n", "<leader>e", ":Neotree reveal left<CR>", { desc = "Open Neotree" })
@@ -32,9 +33,10 @@ keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" 
 -- QoL keymaps
 keymap.set("n", "<leader>nh", "<cmd>noh<cr>", { desc = "No highlight after seach" })
 
--- conform keybinds
 keymap.set("n", "gcf", function()
-  require("conform").format()({
-    lsp_format = "fallback",
-  })
-end, { desc = "Code format" })
+  if conform.format() then
+    vim.notify("File formatted")
+  else
+    vim.notify("Formatter not found")
+  end
+end, { desc = "Format the current file" })

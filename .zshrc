@@ -24,6 +24,9 @@ alias gstat="git status"
 alias glog="git log --oneline --all --graph"
 alias gbr="git branch"
 
+# terraform specific aliases
+alias tf="terraform"
+
 alias lg="lazygit"
 
 eval "$(starship init zsh)"
