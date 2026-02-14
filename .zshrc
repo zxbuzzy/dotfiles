@@ -27,3 +27,6 @@ alias gbr="git branch"
 alias lg="lazygit"
 
 eval "$(starship init zsh)"
+
+# Add cargo
+. "$HOME/.cargo/env"

@@ -1,13 +1,16 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  branch = "master",
   lazy = false,
+  branch = "master",
   build = ":TSUpdate",
   opts = {
-    ensure_installed = { "lua", "go", "yaml", "python" },
+    ensure_installed = { "go", "lua", "python", "yaml", "javascript", "typescript", "rust", "terraform", "hcl" },
     auto_install = true,
     highlight = {
       enable = true,
     },
   },
+  config = function(_, opts)
+    require("nvim-treesitter.configs").setup(opts)
+  end,
 }

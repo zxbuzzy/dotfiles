@@ -38,6 +38,3 @@ vim.cmd([[colorscheme tokyonight-moon]])
 
 require("config.keymaps")
 require("config.lsp")
-
--- add telescope ui-select
-pcall(require("telescope").load_extension, "ui-select")
