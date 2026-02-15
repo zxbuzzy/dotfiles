@@ -1,11 +1,15 @@
-HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 setopt autocd
 bindkey -v
 
-# use nvim as a manpger
+# proper colors
+export TERM="xterm-256color"
+
+# use nvim as a manpger and for everything else
 export MANPAGER='nvim +Man!'
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 # some aliases
 alias mkdir="mkdir -p"
