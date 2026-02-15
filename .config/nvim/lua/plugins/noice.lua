@@ -1,8 +1,52 @@
 return {
   "folke/noice.nvim",
   event = "VeryLazy",
-  opts = {},
+  opts = {
+    lsp = {
+      override = {
+        ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+        ["vim.lsp.util.stylize_markdown"] = true,
+        ["cmp.entry.get_documentation"] = true,
+      },
+    },
+    routes = {
+      {
+        filter = {
+          event = "notify",
+          any = {
+            { warning = true },
+            { find = "tree" },
+          },
+        },
+        opts = { skip = true },
+      },
+      {
+        filter = {
+          event = "msg_show",
+          any = {
+            { find = "yanked" },
+            { find = "written" },
+            { find = "changed" },
+          },
+        },
+        opts = { skip = true },
+      },
+      {
+        view = "cmdline",
+        filter = {
+          event = "msg_showmode",
+          find = "recording",
+        },
+      },
+    },
+    presets = {
+      bottom_search = true, -- use a classic bottom cmdline for search
+      command_palette = true, -- position the cmdline and popupmenu together
+      long_message_to_split = false, -- long messages will be sent to a split
+    },
+  },
   dependencies = {
     "MunifTanjim/nui.nvim",
+    "rcarriga/nvim-notify",
   },
 }

@@ -4,7 +4,19 @@ return {
   branch = "master",
   build = ":TSUpdate",
   opts = {
-    ensure_installed = { "go", "lua", "python", "yaml", "javascript", "typescript", "rust", "terraform", "hcl" },
+    ensure_installed = {
+      "go",
+      "lua",
+      "python",
+      "yaml",
+      "javascript",
+      "typescript",
+      "rust",
+      "terraform",
+      "hcl",
+      "bash",
+      "regex",
+    },
     auto_install = true,
     highlight = {
       enable = true,
