@@ -12,6 +12,8 @@ fish_config theme choose "tokyonight-moon"
 
 # some aliases
 alias mkdir "mkdir -p"
+alias cl "clear"
+alias tree "tree -L"
 
 # vim alias
 alias vim "nvim"
@@ -32,6 +34,7 @@ alias fishp "fish --private"
 alias dps "docker ps"
 alias dpa "docker ps -a"
 alias dex "docker exec -it"
+alias dim "docker images"
 
 
 # terraform specific aliases
