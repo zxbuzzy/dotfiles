@@ -3,16 +3,15 @@ return {
   branch = "0.1.x",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    "nvim-telescope/telescope-ui-select.nvim",
   },
   opts = {
     pickers = {
       find_files = {
         hidden = true,
-        file_ignore_patterns = { "node_modules", ".git", ".venv", "venv", ".obsidian" },
+        file_ignore_patterns = { "node_modules", "%.git", ".venv", ".obsidian" },
       },
       live_grep = {
-        file_ignore_patterns = { "node_modules", ".git", ".venv", "venv", ".obsidian" },
+        file_ignore_patterns = { "node_modules", "%.git", ".venv", ".obsidian" },
         additional_args = function(opts)
           return { "--hidden" }
         end,

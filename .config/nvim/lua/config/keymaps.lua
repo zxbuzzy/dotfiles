@@ -30,8 +30,12 @@ keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" 
 keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 
+-- git signs keymap
+keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", { desc = "Open gitsigns hunk preview" })
+keymap.set("n", "<leader>gb", ":Gitsigns blame_line<CR>", { desc = "Show git blame for current line" })
+
 -- QoL keymaps
-keymap.set("n", "<leader>nh", "<cmd>noh<cr>", { desc = "No highlight after seach" })
+keymap.set("n", "<leader>nh", "<cmd>noh<cr>", { desc = "No highlight after search" })
 
 keymap.set("n", "gcf", function()
   if conform.format() then
