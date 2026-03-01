@@ -5,43 +5,46 @@ set fish_greeting
 
 set TERM xterm-256color
 set EDITOR nvim
+set -x MANPAGER "nvim +Man!"
 set -g fish_key_bindings fish_vi_key_bindings
 
 # set theme
 fish_config theme choose "tokyonight-moon"
 
-# some aliases
-alias mkdir "mkdir -p"
-alias cl "clear"
-alias tree "tree -L"
+# regular
+abbr mkdir "mkdir -p"
+abbr cl "clear"
+abbr tree "tree -L"
 
-# vim alias
-alias vim "nvim"
+# vim
+abbr vim "nvim"
 
-# git aliases
-alias ginit "git init"
-alias gadd "git add -A"
-alias gcm "git commit -m"
-alias gstat "git status"
-alias glog "git log --oneline --all --graph"
-alias gbr "git branch"
+# git
+abbr ginit "git init"
+abbr gadd "git add -A"
+abbr gcm "git commit -m"
+abbr gstat "git status"
+abbr glog "git log --oneline --all --graph"
+abbr gbr "git branch"
+abbr gsw "git switch"
 
-# shell specific aliases
-alias hst "history"
-alias fishp "fish --private"
+# shell
+abbr hst "history"
+abbr fishp "fish --private"
 
-# docker aliases
-alias dps "docker ps"
-alias dpa "docker ps -a"
-alias dex "docker exec -it"
-alias dim "docker images"
+# docker
+abbr dps "docker ps"
+abbr dpa "docker ps -a"
+abbr dex "docker exec -it"
+abbr dim "docker images"
+abbr dl "docker logs -f"
 
 
-# terraform specific aliases
-alias tf="terraform"
+# terraform
+abbr tf "terraform"
 
 # lazygit
-alias lg="lazygit"
+abbr lg "lazygit"
 
 # cargo support
 set PATH $PATH "$HOME/.cargo/bin/"
