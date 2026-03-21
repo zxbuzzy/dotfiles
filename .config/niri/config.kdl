@@ -27,6 +27,10 @@ output "eDP-1" {
     transform "normal"
 }
 
+hotkey-overlay {
+    skip-at-startup
+}
+
 layout {
     gaps 16
 
