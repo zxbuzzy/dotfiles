@@ -1,6 +1,3 @@
-# MacOS specific
-/opt/homebrew/bin/brew shellenv | source
-
 set fish_greeting
 
 set TERM xterm-256color

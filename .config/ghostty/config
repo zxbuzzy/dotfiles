@@ -13,4 +13,4 @@ keybind = ctrl+shift+arrow_right=resize_split:right,10
 keybind = ctrl+shift+arrow_down=resize_split:down,10
 keybind = ctrl+shift+arrow_up=resize_split:up,10
 
-command = /opt/homebrew/bin/fish
+command = $(which fish)
