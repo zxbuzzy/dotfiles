@@ -32,10 +32,6 @@
   margin-right: 5px; /* Spacing after the workspaces module */
 }
 
-#custom-uptime {
-  margin-right: 5px; /* Spacing after the uptime module */
-}
-
 #workspaces button {
   color: #babbf1;
   border-radius: 5px; /* Workspaces buttons are always rounded */
@@ -79,7 +75,6 @@
 #wireplumber,
 #backlight,
 #network,
-#custom-lock,
 #custom-kernel,
 #battery {
   background-color: #1a1b26;
@@ -96,12 +91,12 @@
 #wireplumber:hover,
 #backlight:hover,
 #network:hover,
-#custom-lock:hover,
+#custom-kernel:hover,
 #battery:hover {
   background-color: rgb(41, 42, 53);
 }
 
-#bluetooth {
+#custom-kernel {
   margin-left: 0px; 
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -113,9 +108,6 @@
   margin-right: 7px;
 }
 
-#custom-uptime {
-  color: #babbf1;
-}
 #cpu {
   color: #c6d0f5;
 }
@@ -140,9 +132,6 @@
   color: #e78284;
 }
 
-#custom-lock {
-  color: #babbf1;
-}
 #bluetooth {
   color: #888888;
   font-size: 16px;
@@ -163,7 +152,6 @@
   color: #e78284;
 }
 
-/* --- Tooltip Styles --- */
 tooltip {
   background-color: #1a1b26;
   color: #dddddd;

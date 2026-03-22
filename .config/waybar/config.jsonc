@@ -5,7 +5,6 @@
   "spacing" : 0,
   "modules-left": [
   "niri/workspaces",
-  "custom/uptime",
   ],
 
   "modules-center": ["clock"],
@@ -93,7 +92,8 @@
 
   "custom/kernel": {
     "format": "󰣇 {}",
-    "exec": "uname -r"
+    "exec": "uname -r",
+    "interval": 3600,
   },
 
 }
