@@ -26,7 +26,7 @@
 
 * {
   font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 16px; 
 }
 
 window#waybar {
@@ -59,12 +59,12 @@ button {
 #battery,
 #cpu,
 #memory,
-#temperature,
+#custom-kernel
 #network,
-#pulseaudio {
-  padding: 0 10px;
+#wireplumber {
+  padding: 0px 10px;
+  margin: 5px 1px;
   color: @text;
-  border: 5px;
 }
 
 .modules-right,

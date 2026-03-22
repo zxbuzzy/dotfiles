@@ -9,9 +9,10 @@
     "niri/workspaces",
   ],
   "modules-right": [
+    "custom/kernel",
     "wireplumber",
     "network",
-    "temperature",
+    "memory",
     "battery",
     "clock",
   ],
@@ -41,15 +42,6 @@
   },
   "memory": {
     "format": "{}%  "
-  },
-  "temperature": {
-    "critical-threshold": 80,
-    "format": "{icon} {temperatureC}°C",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ]
   },
   "battery": {
     "states": {
@@ -94,4 +86,8 @@
       ]
     },
   },
+  "custom/kernel": {
+    "exec": "uname -r",
+    "format": "{} "
+  }
 }
