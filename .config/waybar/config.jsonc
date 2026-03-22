@@ -1,93 +1,99 @@
 {
-  "margin-top": 5,
-  "margin-left": 10,
-  "margin-right": 10,
+  "layer": "top",
+  "position": "top",
+  "margin-bottom": -10,
+  "spacing" : 0,
   "modules-left": [
-    "niri/window"
+  "niri/workspaces",
+  "custom/uptime",
   ],
-  "modules-center": [
-    "niri/workspaces",
-  ],
+
+  "modules-center": ["clock"],
+
   "modules-right": [
     "custom/kernel",
-    "wireplumber",
+    "bluetooth",
     "network",
-    "memory",
+    "wireplumber", 
+    "backlight",
     "battery",
-    "clock",
   ],
-  "niri/window": {
-    "format": "{}",
-    "max-length": 45,
-    "rewrite": {
-      "": "Harsh"
-    },
-    "separate-outputs": true,
-  },
+
   "niri/workspaces": {
     "format": "{icon}",
-    "on-click": "activate",
     "format-icons": {
-      "active": " ",
-    },
-    "sort-by-number": true,
+      "active": "",
+      "default": ""
+    }
   },
+
+  "bluetooth": {
+    "format": "󰂲",
+    "format-on": "{icon}",
+    "format-off": "{icon}", 
+    "format-connected":"{icon}",
+    "format-icons":{
+        "on":"󰂯",
+        "off": "󰂲",
+        "connected": "󰂱",
+        },
+    "on-click": "blueman-manager",
+    "tooltip-format-connected":"{device_enumerate}"
+  },
+
   "clock": {
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
+    "format": "{:%H:%M}",
+    "format-alt": "  {:%a, %b %d %Y}",
   },
-  "cpu": {
-    "format": "  {usage}%",
-    "tooltip": false
-  },
-  "memory": {
-    "format": "{}%  "
-  },
-  "battery": {
-    "states": {
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{icon}  {capacity}%",
-    "format-charging": "󰉁 {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "interval": 5,
-  },
+
   "network": {
-    "format": "{ifname}",
-    "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "󰈀",
-    "format-disconnected": "Not connected",
-    "tooltip-format": "  {ifname} via {gwaddri}",
-    "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
-    "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
-    "interval": 1,
+    "format-wifi": "󰤢",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰤠 ",
+    "interval": 5,
+    "tooltip-format": "{essid} ({signalStrength}%)",
     "on-click": "nm-connection-editor"
+
+ },
+
+  "memory": {
+    "interval": 30,
+    "format": "  {used:0.1f}G/{total:0.1f}G",
+    "tooltip-format": "Memory"
   },
+
+  "backlight": {
+        "format": "{icon}  {percent}%",
+        "format-icons": ["","󰃜", "󰃛", "󰃞","󰃝","󰃟","󰃠"],
+        "tooltip": false
+  },
+  
   "wireplumber": {
     "format": "{icon}  {volume}%",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": "",
+    "format-muted": "",
     "format-icons": {
-      "default": [
-        "",
-        "",
-        ""
-      ]
+      "default": ["", "", " "]
     },
+    // "on-click": "pavucontrol"
   },
+
+  "battery": {
+        "interval":2,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-full": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["", "", "", "", ""]
+  },
+
   "custom/kernel": {
-    "exec": "uname -r",
-    "format": "{} "
-  }
+    "format": "󰣇 {}",
+    "exec": "uname -r"
+  },
+
 }
