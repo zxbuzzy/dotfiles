@@ -2,6 +2,11 @@ input {
     keyboard {
       repeat-delay 300
       repeat-rate 25
+      
+      xkb {
+        layout "us,ru"
+        options "grp:win_space_toggle"
+      }
     }
     touchpad {
         tap
@@ -61,10 +66,7 @@ layout {
     }
 }
 
-spawn-at-startup "waybar"
-spawn-at-startup "mako"
 spawn-at-startup "gsettings" "set" "org.gnome.desktop.interface" "color-scheme" "'prefer-dark'"
-spawn-at-startup "waypaper" "--backend" "swaybg" "--restore"
 spawn-at-startup "dms" "run"
 
 clipboard {
