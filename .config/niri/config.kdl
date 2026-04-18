@@ -26,11 +26,11 @@ input {
     }
 }
 
-output "eDP-1" {
-    mode "3072x1920@120"
-    scale 1.7
-    transform "normal"
-}
+// output "eDP-1" {
+//     mode "3072x1920@120"
+//     scale 1.6
+//     transform "normal"
+// }
 
 hotkey-overlay {
     skip-at-startup
@@ -231,3 +231,5 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 }
+
+include "dms/outputs.kdl"
