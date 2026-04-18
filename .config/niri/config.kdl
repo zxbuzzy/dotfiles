@@ -22,8 +22,8 @@ input {
 }
 
 output "eDP-1" {
-    mode "3072x1920@60"
-    scale 1.5
+    mode "3072x1920@120"
+    scale 1.7
     transform "normal"
 }
 
@@ -65,6 +65,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "mako"
 spawn-at-startup "gsettings" "set" "org.gnome.desktop.interface" "color-scheme" "'prefer-dark'"
 spawn-at-startup "waypaper" "--backend" "swaybg" "--restore"
+spawn-at-startup "dms" "run"
 
 clipboard {
     disable-primary

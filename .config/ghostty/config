@@ -15,6 +15,7 @@ keybind = ctrl+shift+arrow_down=resize_split:down,10
 keybind = ctrl+shift+arrow_up=resize_split:up,10
 
 gtk-single-instance = true
+gtk-tabs-location = bottom
 gtk-wide-tabs = false
 gtk-toolbar-style = flat
 window-padding-y = 3,0
