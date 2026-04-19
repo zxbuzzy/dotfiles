@@ -15,5 +15,3 @@ bind-key b bookmark
 bind-key ^F pagedown
 bind-key ^B pageup
 bind-key ^H toggle-show-read-feeds
-
-

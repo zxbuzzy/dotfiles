@@ -2,7 +2,6 @@ input {
     keyboard {
       repeat-delay 300
       repeat-rate 25
-      
       xkb {
         layout "us,ru"
         options "grp:win_space_toggle"
@@ -42,7 +41,7 @@ hotkey-overlay {
 }
 
 layout {
-    gaps 14
+    gaps 10
 
     center-focused-column "never"
     background-color "transparent"

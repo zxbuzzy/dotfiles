@@ -5,6 +5,4 @@ Managed via [GNU Stow](https://www.gnu.org/software/stow/)
 Installation
 ```bash
 stow .
-
 ```
-

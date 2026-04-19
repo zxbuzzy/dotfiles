@@ -1,37 +1,37 @@
 {
+  "session": {
+    "trust_all_worktrees": true
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
   "base_keymap": "VSCode",
-  // "vim_mode": true,
-  "ui_font_size": 14,
+  "vim_mode": true,
+  "ui_font_size": 16.0,
   "ui_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 13,
+  "buffer_font_size": 14,
   "relative_line_numbers": "enabled",
-  "theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Tokyo Night"
-  },
+  "theme": "Tokyo Night Moon",
   "terminal": {
-    "font_size": 12,
+    "dock": "right",
+    "font_size": 13.0,
     "toolbar": {
       "breadcrumbs": false
-    }
+    },
   },
   "vim": {
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "always",
   },
   "indent_guides": {
     "enabled": true,
-    "coloring": "indent_aware"
+    "coloring": "indent_aware",
   },
   "tabs": {
     "show_diagnostics": "all",
     "file_icons": true,
     "git_status": true
   },
-  "format_on_save": "off"
+  "format_on_save": "off",
 }
