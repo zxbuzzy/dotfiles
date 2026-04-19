@@ -9,7 +9,6 @@ input {
       }
     }
     touchpad {
-        tap
         dwt
         dwtp
         natural-scroll
@@ -32,12 +31,18 @@ input {
 //     transform "normal"
 // }
 
+gestures {
+  hot-corners {
+    off
+  }
+}
+
 hotkey-overlay {
     skip-at-startup
 }
 
 layout {
-    gaps 16
+    gaps 14
 
     center-focused-column "never"
     background-color "transparent"
