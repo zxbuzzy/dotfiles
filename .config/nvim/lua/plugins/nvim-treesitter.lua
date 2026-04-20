@@ -1,12 +1,12 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   lazy = false,
-  branch = "master",
+  branch = "main",
   build = ":TSUpdate",
-  opts = {
-    ensure_installed = {
-      "go",
+  config = function()
+    require("nvim-treesitter").install({
       "lua",
+      "go",
       "python",
       "yaml",
       "javascript",
@@ -16,12 +16,7 @@ return {
       "hcl",
       "bash",
       "regex",
-    },
-    highlight = {
-      enable = true,
-    },
-  },
-  config = function(_, opts)
-    require("nvim-treesitter.configs").setup(opts)
+      "kdl",
+    })
   end,
 }
