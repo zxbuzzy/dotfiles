@@ -1,5 +1,6 @@
 local builtin = require("telescope.builtin")
 local conform = require("conform")
+local gitsings = require("gitsigns")
 local keymap = vim.keymap
 
 -- navigation keymaps
@@ -31,8 +32,7 @@ keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 
 -- git signs keymap
-keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", { desc = "Open gitsigns hunk preview" })
-keymap.set("n", "<leader>gb", ":Gitsigns blame_line<CR>", { desc = "Show git blame for current line" })
+keymap.set("n", "<leader>gb", gitsings.toggle_current_line_blame, { desc = "Show git blame for current line" })
 
 -- QoL keymaps
 keymap.set("n", "<leader>nh", "<cmd>noh<cr>", { desc = "No highlight after search" })
