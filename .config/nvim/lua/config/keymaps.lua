@@ -33,6 +33,7 @@ keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" 
 
 -- git signs keymap
 keymap.set("n", "<leader>gb", gitsings.toggle_current_line_blame, { desc = "Show git blame for current line" })
+keymap.set("n", "<leader>hp", gitsings.preview_hunk, { desc = "Show git blame for current line" })
 
 -- QoL keymaps
 keymap.set("n", "<leader>nh", "<cmd>noh<cr>", { desc = "No highlight after search" })
