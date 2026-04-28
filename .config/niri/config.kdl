@@ -219,8 +219,8 @@ binds {
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
-    Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+T       { toggle-window-floating; }
+    Mod+Alt+T { switch-focus-between-floating-and-tiling; }
 
     Mod+W { toggle-column-tabbed-display; }
 
