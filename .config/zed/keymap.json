@@ -3,7 +3,8 @@
     "context": "Workspace",
     "bindings": {
       "shift shift": "file_finder::Toggle",
-      "space g g": "git_panel::ToggleFocus"
+      "space g g": "git_panel::ToggleFocus",
+      "space e": "project_panel::ToggleFocus"
     }
   },
   {
@@ -25,6 +26,13 @@
       "ctrl-n": "search::SelectNextMatch",
       "ctrl-p": "search::SelectPreviousMatch",
       "ctrl-shift-r": "search::ToggleReplace"
+    }
+  },
+  {
+    "context": "GitPanel",
+    "bindings": {
+      "shift-enter": "git::StageAll",
+      "ctrl-shift-enter": "git::Push"
     }
   },
   {
