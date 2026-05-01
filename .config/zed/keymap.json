@@ -1,21 +1,15 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle"
+      "shift shift": "file_finder::Toggle",
+      "space g g": "git_panel::ToggleFocus"
     }
   },
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "s h": "workspace::ActivatePaneRight"
+      "ctrl-shift-l": "workspace::ActivatePaneRight",
     }
   },
   {
@@ -25,14 +19,23 @@
     }
   },
   {
+    "context": "Pane",
+    "bindings": {
+      "space f f": "pane::DeploySearch",
+      "ctrl-n": "search::SelectNextMatch",
+      "ctrl-p": "search::SelectPreviousMatch",
+      "ctrl-shift-r": "search::ToggleReplace"
+    }
+  },
+  {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "s v": "pane::SplitRight",
-      "s s": "pane::SplitDown",
-      "s l": "workspace::ActivatePaneRight",
-      "s h": "workspace::ActivatePaneLeft",
-      "s k": "workspace::ActivatePaneUp",
-      "s j": "workspace::ActivatePaneDown"
+      "ctrl-shift-v": "pane::SplitRight",
+      "ctrl-shift-s": "pane::SplitDown",
+      "ctrl-shift-l": "workspace::ActivatePaneRight",
+      "ctrl-shift-h": "workspace::ActivatePaneLeft",
+      "ctrl-shift-k": "workspace::ActivatePaneUp",
+      "ctrl-shift-j": "workspace::ActivatePaneDown"
     }
   },
   {
