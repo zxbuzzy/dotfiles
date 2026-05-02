@@ -11,6 +11,8 @@
     "context": "ProjectPanel && not_editing",
     "bindings": {
       "ctrl-shift-l": "workspace::ActivatePaneRight",
+      "ctrl-shift-s": "project_panel::OpenSplitHorizontal",
+      "ctrl-shift-v": "project_panel::OpenSplitVertical"
     }
   },
   {
@@ -32,7 +34,7 @@
     "context": "GitPanel",
     "bindings": {
       "shift-enter": "git::StageAll",
-      "ctrl-shift-enter": "git::Push"
+      "ctrl-shift-g": "git::Push"
     }
   },
   {

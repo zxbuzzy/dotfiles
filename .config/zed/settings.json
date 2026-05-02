@@ -52,4 +52,10 @@
     "git_status": true
   },
   "format_on_save": "off",
+  "auto_install_extensions": {
+    "html": true,
+    "toml": true,
+    "tokyo-night": true,
+    "catpuccin-icons": true,
+  }
 }
