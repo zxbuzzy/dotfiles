@@ -16,6 +16,9 @@ abbr tree "tree -L"
 # vim
 abbr vim "nvim"
 
+# newsboat
+abbr news newsboat
+
 # git
 abbr ginit "git init"
 abbr gadd "git add -A"

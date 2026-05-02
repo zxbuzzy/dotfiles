@@ -30,6 +30,10 @@ input {
 //     transform "normal"
 // }
 
+environment {
+  DMS_DISABLE_MATUGEN "1"
+}
+
 gestures {
   hot-corners {
     off
