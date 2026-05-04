@@ -1,5 +1,8 @@
 {
+  "cli_default_open_behavior": "existing_window",
   "icon_theme": "Catppuccin Frappé",
+  "disable_ai": true,
+  "restore_on_startup": "empty_tab",
   "project_panel": {
     "dock": "left"
   },
@@ -38,6 +41,10 @@
     "toolbar": {
       "breadcrumbs": false
     },
+  },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_user_menu": false
   },
   "vim": {
     "use_system_clipboard": "always",

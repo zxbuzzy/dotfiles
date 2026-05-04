@@ -28,6 +28,11 @@ abbr glog "git log --oneline --all --graph"
 abbr gbr "git branch"
 abbr gsw "git switch"
 
+# some rusty things
+abbr cat "bat"
+alias ls "eza --icons"
+abbr yz "yazi"
+
 # shell
 abbr hst "history"
 abbr fishp "fish --private"
