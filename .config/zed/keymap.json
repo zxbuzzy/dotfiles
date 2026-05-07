@@ -2,7 +2,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift-ctrl-g": "git_panel::ToggleFocus",
+      "ctrl-shift-g": "git_panel::ToggleFocus",
     }
   },
   {
@@ -36,13 +36,6 @@
       "space t": "workspace::NewCenterTerminal",
       "+ +": "workspace::Save",
       "space c": "pane::CloseActiveItem"
-    }
-  },
-  {
-    "context": "TabSwitcher",
-    "bindings": {
-      "ctrl-k": "menu::SelectPrevious",
-      "ctrl-j": "menu::SelectNext"
     }
   },
   {
