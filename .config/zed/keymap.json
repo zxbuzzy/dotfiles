@@ -2,15 +2,14 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle",
-      "shift g g": "git_panel::ToggleFocus",
-      "shift e": "project_panel::ToggleFocus"
+      "shift-ctrl-g": "git_panel::ToggleFocus",
     }
   },
   {
-    "context": "ProjectPanel && not_editing",
+    "context": "ProjectPanel && not_editing || Terminal",
     "bindings": {
       "ctrl-shift-l": "workspace::ActivatePaneRight",
+      "ctrl-shift-h": "workspace::ActivatePaneLeft",
       "ctrl-shift-s": "project_panel::OpenSplitHorizontal",
       "ctrl-shift-v": "project_panel::OpenSplitVertical"
     }
@@ -22,12 +21,28 @@
     }
   },
   {
-    "context": "Pane",
+    "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
-      "shift f f": "pane::DeploySearch",
+      "space b": "editor::ToggleGitBlameInline",
+      "shift-k": "editor::Hover",
+      "space l f": "editor::Format",
+      "space d": "diagnostics::Deploy",
+      "space f f": "file_finder::Toggle",
+      "space o": "tab_switcher::Toggle",
+      "space e": "workspace::ToggleLeftDock",
+      "space /": "workspace::NewSearch",
       "ctrl-n": "search::SelectNextMatch",
       "ctrl-p": "search::SelectPreviousMatch",
-      "ctrl-shift-r": "search::ToggleReplace"
+      "space t": "workspace::NewCenterTerminal",
+      "+ +": "workspace::Save",
+      "space c": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "TabSwitcher",
+    "bindings": {
+      "ctrl-k": "menu::SelectPrevious",
+      "ctrl-j": "menu::SelectNext"
     }
   },
   {
@@ -35,6 +50,13 @@
     "bindings": {
       "shift-enter": "git::StageAll",
       "ctrl-shift-g": "git::Push"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
     }
   },
   {
