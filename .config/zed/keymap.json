@@ -11,7 +11,9 @@
       "ctrl-shift-l": "workspace::ActivatePaneRight",
       "ctrl-shift-h": "workspace::ActivatePaneLeft",
       "ctrl-shift-s": "project_panel::OpenSplitHorizontal",
-      "ctrl-shift-v": "project_panel::OpenSplitVertical"
+      "ctrl-shift-v": "project_panel::OpenSplitVertical",
+      "ctrl-alt--": "workspace::DecreaseActiveDockSize",
+      "ctrl-alt-=": "workspace::IncreaseActiveDockSize"
     }
   },
   {

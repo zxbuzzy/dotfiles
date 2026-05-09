@@ -33,6 +33,12 @@ abbr cat "bat"
 alias ls "eza --icons"
 abbr yz "yazi"
 
+# htop -> btop
+alias htop "btop"
+
+# zathura reader
+alias zr zathura
+
 # shell
 abbr hst "history"
 abbr fishp "fish --private"
