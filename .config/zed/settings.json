@@ -1,6 +1,6 @@
 {
   "cli_default_open_behavior": "existing_window",
-  "icon_theme": "Catppuccin Frappé",
+  "icon_theme": "Catppuccin Mocha",
   "disable_ai": true,
   "restore_on_startup": "empty_tab",
   "project_panel": {
@@ -41,6 +41,9 @@
     "toolbar": {
       "breadcrumbs": false
     },
+    "shell": {
+      "program": "/usr/bin/fish"
+    }
   },
   "title_bar": {
     "show_sign_in": false,
@@ -64,5 +67,5 @@
     "toml": true,
     "tokyo-night": true,
     "catpuccin-icons": true,
-  }
+  },
 }

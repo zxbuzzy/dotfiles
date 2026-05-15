@@ -4,7 +4,7 @@ input {
       repeat-rate 25
       xkb {
         layout "us,ru"
-        options "grp:alt_space_toggle"
+        options "grp:alt_shift_toggle"
       }
     }
     touchpad {
@@ -89,6 +89,13 @@ window-rule {
     geometry-corner-radius 10
     clip-to-geometry true
     draw-border-with-background false
+}
+
+window-rule {
+    match app-id="telegram"
+    match app-id="zed"
+    match app-id="ghostty"
+    open-maximized true
 }
 
 binds {
