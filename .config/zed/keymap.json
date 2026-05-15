@@ -37,7 +37,11 @@
       "ctrl-p": "search::SelectPreviousMatch",
       "space t": "workspace::NewCenterTerminal",
       "+ +": "workspace::Save",
-      "space c": "pane::CloseActiveItem"
+      "space c": "pane::CloseActiveItem",
+      "ctrl-alt-h": "vim::ResizePaneLeft",
+      "ctrl-alt-l": "vim::ResizePaneRight",
+      "ctrl-alt-k": "vim::ResizePaneUp",
+      "ctrl-alt-j": "vim::ResizePaneDown",
     }
   },
   {
