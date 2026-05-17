@@ -12,6 +12,7 @@ fish_config theme choose "tokyonight-moon"
 abbr mkdir "mkdir -p"
 abbr cl "clear"
 abbr tree "tree -L"
+abbr ping "ping -c 3"
 
 # vim
 abbr vim "nvim"
@@ -30,7 +31,7 @@ abbr gsw "git switch"
 
 # some rusty things
 abbr cat "bat"
-alias ls "eza --icons"
+alias ls "eza --icons -alh --group-directories-first"
 abbr yz "yazi"
 
 # htop -> btop
@@ -56,6 +57,9 @@ abbr tf "terraform"
 
 # lazygit
 abbr lg "lazygit"
+
+# self-care
+abbr rm "rm -i --preserve-root"
 
 # cargo support
 set PATH $PATH "$HOME/.cargo/bin/"

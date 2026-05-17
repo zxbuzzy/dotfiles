@@ -24,6 +24,10 @@ input {
     }
 }
 
+overview {
+    backdrop-color "#2e1c48"
+}
+
 // output "eDP-1" {
 //     mode "3072x1920@120"
 //     scale 1.6
