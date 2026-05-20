@@ -36,6 +36,7 @@ overview {
 
 environment {
   DMS_DISABLE_MATUGEN "1"
+  AVALONIA_GLOBAL_SCALE_FACTOR "1.25"
 }
 
 gestures {
