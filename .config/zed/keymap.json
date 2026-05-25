@@ -6,6 +6,12 @@
     }
   },
   {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-shift-r": "search::ToggleReplace"
+    }
+  },
+  {
     "context": "ProjectPanel && not_editing || Terminal",
     "bindings": {
       "ctrl-shift-l": "workspace::ActivatePaneRight",
