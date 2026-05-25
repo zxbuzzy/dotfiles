@@ -65,6 +65,8 @@
   "auto_install_extensions": {
     "html": true,
     "toml": true,
+    "dockerfile": true,
+    "lua": true,
     "tokyo-night": true,
     "catpuccin-icons": true,
   },

@@ -392,7 +392,10 @@
       "layout": null
     },
     "eDP-1": {
-      "layout": null
+      "layout": null,
+      "hotCorners": {
+        "off": true
+      }
     }
   },
   "hyprlandOutputSettings": {},
