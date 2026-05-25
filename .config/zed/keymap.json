@@ -50,7 +50,7 @@
       "ctrl-shift-l": "workspace::ActivatePaneRight",
       "ctrl-shift-h": "workspace::ActivatePaneLeft",
       "shift-enter": "git::StageAll",
-      "ctrl-shift-g": "git::Push"
+      "ctrl-shift-p": "git::Push"
     }
   },
   {
