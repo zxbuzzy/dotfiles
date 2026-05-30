@@ -15,7 +15,7 @@ abbr tree "tree -L"
 abbr ping "ping -c 3"
 
 # vim
-abbr vim "nvim"
+abbr v "nvim"
 
 # newsboat
 abbr news newsboat
@@ -59,7 +59,7 @@ abbr tf "terraform"
 abbr lg "lazygit"
 
 # self-care
-abbr rm "rm -i --preserve-root"
+abbr rm "rm -i"
 
 # cargo support
 set PATH $PATH "$HOME/.cargo/bin/"

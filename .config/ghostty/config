@@ -26,8 +26,8 @@ keybind = super+shift+period=move_tab:1
 
 keybind = super+shift+n=new_window
 
-keybind = super+c=copy_to_clipboard
-keybind = super+v=paste_from_clipboard
+keybind = super+shift+c=copy_to_clipboard
+keybind = super+shift+v=paste_from_clipboard
 
 keybind = super+shift+d=new_split:down
 keybind = super+shift+enter=new_split:right
