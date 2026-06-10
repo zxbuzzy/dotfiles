@@ -1,11 +1,5 @@
 [
   {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-shift-g": "git_panel::ToggleFocus",
-    }
-  },
-  {
     "context": "Pane",
     "bindings": {
       "ctrl-shift-r": "search::ToggleReplace"
@@ -55,8 +49,6 @@
     "bindings": {
       "ctrl-shift-l": "workspace::ActivatePaneRight",
       "ctrl-shift-h": "workspace::ActivatePaneLeft",
-      "shift-enter": "git::StageAll",
-      "ctrl-shift-p": "git::Push"
     }
   },
   {

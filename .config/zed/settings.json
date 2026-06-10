@@ -42,7 +42,7 @@
       "breadcrumbs": false
     },
     "shell": {
-      "program": "/usr/bin/fish"
+      "program": "/opt/homebrew/bin/fish"
     }
   },
   "title_bar": {
@@ -68,6 +68,6 @@
     "dockerfile": true,
     "lua": true,
     "tokyo-night": true,
-    "catpuccin-icons": true,
+    "catppuccin-icons": true,
   },
 }

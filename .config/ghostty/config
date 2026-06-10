@@ -1,6 +1,6 @@
 theme = dark:TokyoNight Moon,light:Catppuccin Latte
 font-family = "JetBrainsMono Nerd Font"
-font-size = 11
+font-size = 14
 shell-integration-features = ssh-env
 bell-features = no-title, no-attention
 
@@ -12,7 +12,6 @@ macos-titlebar-style = tabs
 
 bold-is-bright = true
 
-keybind = clear
 keybind = ctrl+shift+arrow_left=resize_split:left,10
 keybind = ctrl+shift+arrow_right=resize_split:right,10
 keybind = ctrl+shift+arrow_down=resize_split:down,10
@@ -26,9 +25,6 @@ keybind = super+shift+period=move_tab:1
 
 keybind = super+shift+n=new_window
 
-keybind = super+shift+c=copy_to_clipboard
-keybind = super+shift+v=paste_from_clipboard
-
 keybind = super+shift+d=new_split:down
 keybind = super+shift+enter=new_split:right
 
@@ -37,12 +33,7 @@ keybind = ctrl+shift+j=goto_split:bottom
 keybind = ctrl+shift+k=goto_split:top
 keybind = ctrl+shift+l=goto_split:right
 
-gtk-single-instance = true
-gtk-tabs-location = bottom
-gtk-wide-tabs = false
-gtk-toolbar-style = flat
 window-padding-y = 3,0
 window-padding-balance = true
-window-decoration = false
 
-command = $(which fish)
+command = /opt/homebrew/bin/fish
