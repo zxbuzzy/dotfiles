@@ -8,10 +8,10 @@
   {
     "context": "ProjectPanel && not_editing || Terminal",
     "bindings": {
-      "ctrl-shift-l": "workspace::ActivatePaneRight",
-      "ctrl-shift-h": "workspace::ActivatePaneLeft",
-      "ctrl-shift-s": "project_panel::OpenSplitHorizontal",
-      "ctrl-shift-v": "project_panel::OpenSplitVertical",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-s": "project_panel::OpenSplitHorizontal",
+      "ctrl-v": "project_panel::OpenSplitVertical",
       "ctrl-alt--": "workspace::DecreaseActiveDockSize",
       "ctrl-alt-=": "workspace::IncreaseActiveDockSize"
     }
@@ -61,12 +61,12 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "ctrl-shift-v": "pane::SplitRight",
-      "ctrl-shift-s": "pane::SplitDown",
-      "ctrl-shift-l": "workspace::ActivatePaneRight",
-      "ctrl-shift-h": "workspace::ActivatePaneLeft",
-      "ctrl-shift-k": "workspace::ActivatePaneUp",
-      "ctrl-shift-j": "workspace::ActivatePaneDown"
+      "ctrl-v": "pane::SplitRight",
+      "ctrl-s": "pane::SplitDown",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
   {

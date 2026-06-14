@@ -2,7 +2,7 @@
   "cli_default_open_behavior": "existing_window",
   "icon_theme": "Catppuccin Mocha",
   "disable_ai": true,
-  "restore_on_startup": "empty_tab",
+  "restore_on_startup": "launchpad",
   "project_panel": {
     "dock": "left"
   },
@@ -69,5 +69,6 @@
     "lua": true,
     "tokyo-night": true,
     "catppuccin-icons": true,
+    "git-firefly": true
   },
 }
