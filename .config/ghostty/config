@@ -1,4 +1,4 @@
-theme = dark:TokyoNight Moon,light:Catppuccin Latte
+theme = Catppuccin Mocha
 font-family = "JetBrainsMono Nerd Font"
 font-size = 14
 shell-integration-features = ssh-env
@@ -11,29 +11,5 @@ mouse-hide-while-typing = true
 macos-titlebar-style = tabs
 
 bold-is-bright = true
-
-keybind = ctrl+shift+arrow_left=resize_split:left,10
-keybind = ctrl+shift+arrow_right=resize_split:right,10
-keybind = ctrl+shift+arrow_down=resize_split:down,10
-keybind = ctrl+shift+arrow_up=resize_split:up,10
-
-keybind = super+shift+t=new_tab
-keybind = super+shift+[=previous_tab
-keybind = super+shift+]=next_tab
-keybind = super+shift+comma=move_tab:-1
-keybind = super+shift+period=move_tab:1
-
-keybind = super+shift+n=new_window
-
-keybind = super+shift+d=new_split:down
-keybind = super+shift+enter=new_split:right
-
-keybind = ctrl+shift+h=goto_split:left
-keybind = ctrl+shift+j=goto_split:bottom
-keybind = ctrl+shift+k=goto_split:top
-keybind = ctrl+shift+l=goto_split:right
-
-window-padding-y = 3,0
-window-padding-balance = true
 
 command = /opt/homebrew/bin/fish

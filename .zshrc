@@ -1,24 +1,18 @@
 HISTSIZE=10000
 SAVEHIST=10000
 setopt autocd
-bindkey -v
 
-# proper colors
 export TERM="xterm-256color"
+export EDITOR="vim"
 
-# use nvim as a manpger and for everything else
-export MANPAGER='nvim +Man!'
-export EDITOR="nvim"
-export VISUAL="nvim"
+alias v="nvim"
 
 # some aliases
 alias mkdir="mkdir -p"
-
-# vim alias
-alias vim="nvim"
-
-# ll
-alias ll="ls -lG"
+alias ll="ls -lhG"
+alias tree="tree -L"
+alias ping="ping -c 3"
+alias rm="rm -i"
 
 # git aliases
 alias ginit="git init"
@@ -27,13 +21,11 @@ alias gcm="git commit -m"
 alias gstat="git status"
 alias glog="git log --oneline --all --graph"
 alias gbr="git branch"
-
-# terraform specific aliases
-alias tf="terraform"
+alias gsw="git switch"
 
 alias lg="lazygit"
 
-eval "$(starship init zsh)"
-
 # Add cargo
 . "$HOME/.cargo/env"
+
+eval "$(starship init zsh)"

@@ -41,3 +41,5 @@ vim.opt.smartcase = true
 
 -- Keep signcolumn
 vim.opt.signcolumn = "yes"
+
+vim.opt.fillchars = { eob = " " }

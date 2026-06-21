@@ -1,6 +1,11 @@
 {
   "cli_default_open_behavior": "existing_window",
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": "Zed (Default)",
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false,
+  },
   "disable_ai": true,
   "restore_on_startup": "launchpad",
   "project_panel": {
@@ -12,6 +17,7 @@
   "collaboration_panel": {
     "dock": "left"
   },
+  "vim_mode": true,
   "agent": {
     "dock": "right",
     "favorite_models": [],
@@ -28,21 +34,21 @@
     "metrics": false
   },
   "base_keymap": "VSCode",
-  "vim_mode": true,
   "ui_font_size": 16.0,
   "ui_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 14,
   "relative_line_numbers": "enabled",
-  "theme": "Tokyo Night Moon",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha"
+  },
   "terminal": {
     "dock": "right",
     "font_size": 13.0,
     "toolbar": {
       "breadcrumbs": false
-    },
-    "shell": {
-      "program": "/opt/homebrew/bin/fish"
     }
   },
   "title_bar": {
@@ -67,8 +73,6 @@
     "toml": true,
     "dockerfile": true,
     "lua": true,
-    "tokyo-night": true,
-    "catppuccin-icons": true,
     "git-firefly": true
   },
 }

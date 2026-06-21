@@ -1,24 +1,19 @@
 set fish_greeting
 
 set TERM xterm-256color
-set EDITOR nvim
-set -x MANPAGER "nvim +Man!"
+set EDITOR vim
 set -g fish_key_bindings fish_vi_key_bindings
-
-# set theme
-fish_config theme choose "tokyonight-moon"
 
 # regular
 abbr mkdir "mkdir -p"
 abbr cl "clear"
 abbr tree "tree -L"
 abbr ping "ping -c 3"
-
-# vim
 abbr v "nvim"
+abbr ff "fastfetch"
 
-# newsboat
-abbr news newsboat
+# set theme
+fish_config theme choose catppuccin-mocha
 
 # git
 abbr ginit "git init"
@@ -36,9 +31,6 @@ abbr yz "yazi"
 
 # htop -> btop
 alias htop "btop"
-
-# zathura reader
-alias zr zathura
 
 # shell
 abbr hst "history"
@@ -63,6 +55,7 @@ abbr rm "rm -i"
 
 # cargo support
 set PATH $PATH "$HOME/.cargo/bin/"
+set -gx PATH ~/.local/bin $PATH
 
 # starship
 starship init fish | source

@@ -1,3 +1,0 @@
-set selection-clipboard clipboard
-map F toggle_fullscreen
-map [fullscreen] F toggle_fullscreen
