@@ -4,16 +4,16 @@ set TERM xterm-256color
 set EDITOR vim
 set -g fish_key_bindings fish_vi_key_bindings
 
+fish_config theme choose "catppuccin-mocha"
+
+
 # regular
 abbr mkdir "mkdir -p"
 abbr cl "clear"
 abbr tree "tree -L"
 abbr ping "ping -c 3"
-abbr v "nvim"
 abbr ff "fastfetch"
-
-# set theme
-fish_config theme choose catppuccin-mocha
+abbr tree "eza --tree"
 
 # git
 abbr ginit "git init"
@@ -56,6 +56,8 @@ abbr rm "rm -i"
 # cargo support
 set PATH $PATH "$HOME/.cargo/bin/"
 set -gx PATH ~/.local/bin $PATH
+
+pyenv init - fish | source
 
 # starship
 starship init fish | source

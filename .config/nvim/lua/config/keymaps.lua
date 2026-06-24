@@ -38,6 +38,8 @@ keymap.set("n", "<leader>hp", gitsings.preview_hunk, { desc = "Show git blame fo
 -- QoL keymaps
 keymap.set("n", "<leader>nh", "<cmd>noh<cr>", { desc = "No highlight after search" })
 keymap.set("n", "==", "<cmd>w<cr>", { desc = "Save file" })
+keymap.set("n", "q", "<nop>", { noremap = true })
+keymap.set("n", "Q", "q", { noremap = true, desc = "New mapping for a macro" })
 
 keymap.set("n", "gcf", function()
   if conform.format() then

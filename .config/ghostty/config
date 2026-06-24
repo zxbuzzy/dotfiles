@@ -1,10 +1,9 @@
 theme = Catppuccin Mocha
+
 font-family = "JetBrainsMono Nerd Font"
 font-size = 14
 shell-integration-features = ssh-env
 bell-features = no-title, no-attention
-
-background-opacity = 0.95
 
 mouse-hide-while-typing = true
 

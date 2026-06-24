@@ -5,7 +5,8 @@ setopt autocd
 export TERM="xterm-256color"
 export EDITOR="vim"
 
-alias v="nvim"
+alias ff="fastfetch"
+alias hst="history 0"
 
 # some aliases
 alias mkdir="mkdir -p"

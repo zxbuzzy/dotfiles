@@ -22,5 +22,7 @@ set hidden
 set ttyfast
 set laststatus=2
 
+inoremap jj <Esc>
+
 set showcmd
 set background=dark

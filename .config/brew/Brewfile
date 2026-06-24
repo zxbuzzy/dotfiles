@@ -21,6 +21,7 @@ brew 'fish'
 brew 'starship'
 brew 'k9s'
 brew 'dive'
+brew 'pyenv'
 
 cask 'ghostty'
 cask 'keepassxc'
