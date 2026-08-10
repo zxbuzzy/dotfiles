@@ -1,14 +1,14 @@
-theme = Catppuccin Mocha
+theme = iTerm2 Default
 
 font-family = "JetBrainsMono Nerd Font"
 font-size = 14
 shell-integration-features = ssh-env
 bell-features = no-title, no-attention
+cursor-style = block
+shell-integration-features = no-cursor
 
 mouse-hide-while-typing = true
 
 macos-titlebar-style = tabs
 
 bold-is-bright = true
-
-command = /opt/homebrew/bin/fish

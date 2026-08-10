@@ -44,18 +44,15 @@
   "buffer_font_size": 13.0,
   "relative_line_numbers": "enabled",
   "theme": {
-    "mode": "dark",
+    "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha"
+    "dark": "One Dark"
   },
   "terminal": {
     "dock": "right",
     "font_size": 13.0,
     "toolbar": {
       "breadcrumbs": false
-    },
-    "shell": {
-      "program": "fish"
     }
   },
   "title_bar": {

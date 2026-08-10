@@ -4,9 +4,6 @@ set TERM xterm-256color
 set EDITOR vim
 set -g fish_key_bindings fish_vi_key_bindings
 
-fish_config theme choose "catppuccin-mocha"
-
-
 # regular
 abbr mkdir "mkdir -p"
 abbr cl "clear"
