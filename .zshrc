@@ -2,9 +2,10 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt autocd
 
+PS1=$'%n@%m:\e[0;36m%~\e[0m $ '
+
 export TERM="xterm-256color"
 export EDITOR="vim"
-
 alias ff="fastfetch"
 alias hst="history 0"
 

@@ -1,8 +1,8 @@
 # if not running interactively, don't do anything
 [[ -n $PS1 ]] || return
 
-# PS1="\[\033[01;32m\]\u@\h\[\033[00m\] \$ "
 PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ "
+# PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\u@\h|${PS1_CMD1} \\$'
 
 export EDITOR='vim'
 export HISTSIZE=10000
@@ -13,6 +13,7 @@ export VISUAL='vim'
 
 shopt -s cdspell
 shopt -s dirspell
+shopt -s extglob
 
 # some aliases
 alias mkdir="mkdir -p"
@@ -20,6 +21,7 @@ alias ll="ls -lhG"
 alias tree="tree -L"
 alias ping="ping -c 3"
 alias rm="rm -i"
+alias cl="clear"
 
 # git aliases
 alias ginit="git init"
@@ -36,6 +38,9 @@ alias dpa="docker ps -a"
 alias dex="docker exec -it"
 alias dim="docker images"
 alias dl="docker logs -f"
+
+# QoL aliases
+alias ipbr="ip -br link"
 
 alias lg="lazygit"
 
