@@ -51,6 +51,7 @@
   "terminal": {
     "dock": "right",
     "font_size": 13.0,
+    "starts_open": true,
     "toolbar": {
       "breadcrumbs": false
     }
