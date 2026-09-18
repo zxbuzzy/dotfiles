@@ -53,6 +53,7 @@ alias dpa='docker ps -a'
 alias dex='docker exec -it'
 alias dim='docker images'
 alias dl='docker logs -f'
+alias drmi='docker rmi'
 
 alias k='kubectl'
 alias s='kitten ssh'
