@@ -58,4 +58,6 @@ alias drmi='docker rmi'
 alias k='kubectl'
 alias s='kitten ssh'
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 eval "$(starship init zsh)"
