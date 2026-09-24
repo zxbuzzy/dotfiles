@@ -11,11 +11,6 @@ path=("${KREW_ROOT:-$HOME/.krew}/bin" $path)
 [[ -n ${HOMEBREW_PREFIX-} ]] &&
   fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
 
-# Node
-export NVM_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/nvm"
-[[ -z ${XDG_CONFIG_HOME-} ]] && export NVM_DIR="$HOME/.nvm"
-[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
-
 # History: save incrementally without mixing open terminals
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
@@ -58,6 +53,10 @@ alias drmi='docker rmi'
 alias k='kubectl'
 alias s='kitten ssh'
 
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# fnm
+FNM_PATH="/opt/homebrew/opt/fnm/bin"
+if [ -d "$FNM_PATH" ]; then
+    eval "$(fnm env --shell zsh)"
+fi
 
 eval "$(starship init zsh)"
