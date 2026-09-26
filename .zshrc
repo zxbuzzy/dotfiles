@@ -11,6 +11,15 @@ path=("${KREW_ROOT:-$HOME/.krew}/bin" $path)
 [[ -n ${HOMEBREW_PREFIX-} ]] &&
   fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
 
+# Some QoL functions
+function hst() {
+    if [ -z "$*" ]; then
+        history 1
+    else
+        history 1 | rg "$@"
+    fi
+}
+
 # History: save incrementally without mixing open terminals
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
