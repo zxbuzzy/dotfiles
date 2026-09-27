@@ -36,6 +36,7 @@ bindkey '^R' history-incremental-search-backward
 # Show exit status when a command fails
 PROMPT='%(?..%F{red}[%?]%f )%F{green}%n@%m%f:%F{blue}%~%f %# '
 
+alias reload='source ~/.zshrc'
 alias ll='ls -lhG'
 alias mkd='mkdir -p'
 alias t2='tree -L 2'
@@ -50,6 +51,10 @@ alias gstat='git status'
 alias glog='git log --oneline --all --graph'
 alias gbr='git branch'
 alias gsw='git switch'
+alias gp='git push origin HEAD'
+alias gpu="git pull origin"
+alias gr='git remote'
+alias gclone='git clone'
 alias lg='lazygit'
 
 alias dps='docker ps'
@@ -60,6 +65,9 @@ alias dl='docker logs -f'
 alias drmi='docker rmi'
 
 alias k='kubectl'
+alias kap='kubectl apply -f'
+alias kg='kubectl get'
+alias kl='kubectl logs'
 alias s='kitten ssh'
 
 # fnm
