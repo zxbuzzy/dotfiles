@@ -2,7 +2,7 @@
 
 export EDITOR=vim VISUAL=vim PAGER=less
 
-# Homebrew, Rust, kubectl plugins
+# Homebrew, Rust kubectl plugins
 [[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -r "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
@@ -43,6 +43,7 @@ alias t2='tree -L 2'
 alias p3='ping -c 3'
 alias rmi='rm -i'
 alias cl='clear'
+alias oc='opencode'
 
 alias ginit='git init'
 alias gadd='git add -A'
