@@ -2,8 +2,8 @@
   {
     "context": "Pane",
     "bindings": {
-      "ctrl-shift-r": "search::ToggleReplace"
-    }
+      "ctrl-shift-r": "search::ToggleReplace",
+    },
   },
   {
     "context": "ProjectPanel && not_editing || Terminal",
@@ -12,51 +12,40 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-s": "project_panel::OpenSplitHorizontal",
       "ctrl-v": "project_panel::OpenSplitVertical",
-      "ctrl-alt--": "workspace::DecreaseActiveDockSize",
-      "ctrl-alt-=": "workspace::IncreaseActiveDockSize"
-    }
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j j": "vim::NormalBefore"
-    }
+      "j j": "vim::NormalBefore",
+    },
   },
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
-      "space b": "editor::ToggleGitBlameInline",
       "shift-k": "editor::Hover",
-      "space l f": "editor::Format",
-      "space d": "diagnostics::Deploy",
-      "space f f": "file_finder::Toggle",
-      "space o": "tab_switcher::Toggle",
-      "space e": "workspace::ToggleLeftDock",
-      "space /": "workspace::NewSearch",
       "ctrl-n": "search::SelectNextMatch",
       "ctrl-p": "search::SelectPreviousMatch",
-      "space t": "workspace::NewCenterTerminal",
-      "= =": "workspace::Save",
-      "space c": "pane::CloseActiveItem",
+      "ctrl-shift-t": "workspace::NewCenterTerminal",
       "ctrl-alt-h": "vim::ResizePaneLeft",
       "ctrl-alt-l": "vim::ResizePaneRight",
       "ctrl-alt-k": "vim::ResizePaneUp",
       "ctrl-alt-j": "vim::ResizePaneDown",
-    }
+    },
   },
   {
     "context": "GitPanel",
     "bindings": {
       "ctrl-shift-l": "workspace::ActivatePaneRight",
       "ctrl-shift-h": "workspace::ActivatePaneLeft",
-    }
+    },
   },
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
     "bindings": {
       "shift-j": "editor::MoveLineDown",
-      "shift-k": "editor::MoveLineUp"
-    }
+      "shift-k": "editor::MoveLineUp",
+    },
   },
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
@@ -66,13 +55,13 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
   },
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
     "bindings": {
-      "g c": "editor::ToggleComments"
-    }
-  }
+      "g c": "editor::ToggleComments",
+    },
+  },
 ]
