@@ -2,15 +2,6 @@
 
 export EDITOR=vim VISUAL=vim PAGER=less
 
-# Homebrew, Rust kubectl plugins
-[[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
-[[ -r "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
-
-typeset -U path fpath
-path=("${KREW_ROOT:-$HOME/.krew}/bin" $path)
-[[ -n ${HOMEBREW_PREFIX-} ]] &&
-  fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
-
 # Some QoL functions
 function hst() {
     if [ -z "$*" ]; then
@@ -24,17 +15,11 @@ function hst() {
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
-setopt INC_APPEND_HISTORY HIST_IGNORE_DUPS INTERACTIVE_COMMENTS
-unsetopt SHARE_HISTORY
 
 # Completion and familiar Ctrl-key editing
 autoload -Uz compinit
 compinit
-bindkey -e
 bindkey '^R' history-incremental-search-backward
-
-# Show exit status when a command fails
-PROMPT='%(?..%F{red}[%?]%f )%F{green}%n@%m%f:%F{blue}%~%f %# '
 
 alias reload='source ~/.zshrc'
 alias ll='ls -lhG'
@@ -70,6 +55,12 @@ alias kap='kubectl apply -f'
 alias kg='kubectl get'
 alias kl='kubectl logs'
 alias s='kitten ssh'
+
+# Rust
+[[ -r "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+
+# Krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # fnm
 FNM_PATH="/opt/homebrew/opt/fnm/bin"
